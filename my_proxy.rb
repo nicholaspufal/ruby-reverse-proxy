@@ -12,12 +12,4 @@ module Rack
       super(env)
     end
   end
-
-  class MyApp
-    def call(env)
-      res = Response.new
-      res.write "<title>My proxy</title>"
-      res.finish
-    end
-  end
 end
